@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abril_fatface</item>
+        <item>@font/arbutus</item>
+        <item>@font/archivo_black</item>
+        <item>@font/asset</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/caesar_dressing</item>
+        <item>@font/chewy</item>
+        <item>@font/codystar_light</item>
+        <item>@font/crafty_girls</item>
+        <item>@font/gloria_hallelujah</item>
+        <item>@font/lacquer</item>
+        <item>@font/mystery_quest</item>
+        <item>@font/press_start_2p</item>
+        <item>@font/ultra</item>
+    </array>
+</resources>

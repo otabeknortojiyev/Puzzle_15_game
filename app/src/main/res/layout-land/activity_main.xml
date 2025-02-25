@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/db_home_bg"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/fl_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/db_rounded_background_grey"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/bt_play_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="10dp" />
+
+                <ImageView
+                    android:id="@+id/btBackToHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/db_left" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/mystery_quest"
+                    android:text="Classic 15 Puzzle"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btRestart"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="70dp"
+                android:background="@drawable/db_rounded_background_grey">
+
+                <ImageView
+                    android:id="@+id/reload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/db_reload" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btTimer"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/db_rounded_background_grey">
+
+                <Chronometer
+                    android:id="@+id/text_time_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mystery_quest"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bt_step"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="68dp"
+                android:background="@drawable/db_rounded_background_grey">
+
+                <TextView
+                    android:id="@+id/text_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:fontFamily="@font/mystery_quest"
+                    android:textStyle="bold"
+                    android:text="Steps"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/text_score_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/mystery_quest"
+                    android:text="84"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/fl_game_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/db_rounded_background_grey"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/btn1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@+id/btn1"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@+id/btn2"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn4"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@+id/btn3"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn5"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn1"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="84dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn6"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn2"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn5"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn7"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn3"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn6"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn8"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn4"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn7"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn9"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn5"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="84dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn10"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn6"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn9"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn11"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn7"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn10"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn12"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn8"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn11"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn13"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn9"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="84dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn14"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn10"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn13"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn15"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn11"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn14"
+                        android:background="@drawable/db_rounded_background_white"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn16"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_below="@id/btn12"
+                        android:layout_margin="4dp"
+                        android:layout_toRightOf="@id/btn15"
+                        android:fontFamily="@font/mystery_quest"
+                        android:gravity="center"
+                        android:textColor="@color/number_color"
+                        android:textSize="48sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_win_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#27000000"
+        android:clickable="false"
+        android:visibility="invisible" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/giv_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#00FAF7F7"
+        android:clickable="false"
+        android:src="@drawable/db_gif2"
+        android:visibility="invisible" />
+
+</FrameLayout>

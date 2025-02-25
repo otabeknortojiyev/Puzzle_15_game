@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/db_home_bg"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+
+    <ImageView
+        android:id="@+id/btBackToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/db_left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/crafty_girls"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Assalomu alaykum!\nMen Nortojiyev Otabek\nushbu PUZZLE 15 dasturimni GITA dasturchilar akademiyasida BOOTCAMP-8 kursida androidga o'tganimda, 3 darsda o'rganish maqsadida qilgan edim!"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

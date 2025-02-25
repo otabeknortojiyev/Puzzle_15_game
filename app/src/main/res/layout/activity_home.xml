@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/db_home_bg"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/db_15_logo" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/db_puzzle_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="240dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+
+        <Button
+            android:id="@+id/bt_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/db_rounded_background_grey"
+            android:fontFamily="@font/mystery_quest"
+            android:padding="8dp"
+            android:text="continue"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/db_rounded_background_grey"
+            android:fontFamily="@font/mystery_quest"
+            android:padding="8dp"
+            android:text="new game"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_leaderBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/db_rounded_background_grey"
+            android:fontFamily="@font/mystery_quest"
+            android:padding="8dp"
+            android:text="leaderboard"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/db_rounded_background_grey"
+            android:fontFamily="@font/mystery_quest"
+            android:padding="8dp"
+            android:text="settings"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/db_rounded_background_grey"
+            android:fontFamily="@font/mystery_quest"
+            android:padding="8dp"
+            android:text="info"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/db_rounded_background_grey"
+            android:fontFamily="@font/mystery_quest"
+            android:padding="8dp"
+            android:text="quit"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/iv_home_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#48000000"
+            android:clickable="false"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/db_home_bg"
+    android:orientation="vertical"
+    tools:context=".WinActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_id1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/db_cup" />
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mystery_quest"
+            android:text="congratulations"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/bt_step"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/db_rounded_background_grey">
+
+            <TextView
+                android:id="@+id/text_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:fontFamily="@font/mystery_quest"
+                android:text="Your Score"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_score_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/mystery_quest"
+                android:text="84"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btStep"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/db_rounded_background_grey">
+
+            <TextView
+                android:id="@+id/text_time_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:fontFamily="@font/mystery_quest"
+                android:text="Your Time"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_time_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/mystery_quest"
+                android:text="84"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_id2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/text_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="120dp"
+            android:fontFamily="@font/mystery_quest"
+            android:text="Rate us"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="48dp" />
+
+        <FrameLayout
+            android:id="@+id/bt_restart"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/db_rounded_background_grey">
+
+            <ImageView
+                android:id="@+id/restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/db_ps5" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bt_home"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="64dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/db_rounded_background_grey">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/db_home" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
