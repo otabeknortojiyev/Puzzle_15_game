@@ -28,4 +28,4 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/otabeknortojiyev/2048-game.git
+git clone https://github.com/otabeknortojiyev/Puzzle_15_game.git
